@@ -1,170 +1,183 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Student Management System</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
-        body{
-          background-color: aqua;
-        }
-        .header>a,.brand{
-            text-align:center;
-            font-size: 30px;
-        }
-        .header>nav,.nav,nav>a {
-            text-align: end; 
-            background: black;
-            color: white !important;
-            border-color: firebrick;
-            font-size: 26px;
-            text-decoration: double;
-            text-transform: uppercase;
-        }
-        .title{
-            font-style: italic;
-            font-family: 'Times New Roman', Times, serif;
-            color: blue;
-            background-color: white;
-        }
-        a:hover,
-        a:focus {
-            color: red !important;
-            background-color: yellow !important;
-            border-color: green !important;
-        }
-        a:active,.active {
-            color: rgb(0, 255, 34) !important;
-            background-color: rgb(255, 123, 0) !important;
-            border-color: rgb(47, 0, 128) !important;
-        }
+      body {
+        background-color: aqua;
+      }
+      .header > a,
+      .brand {
+        text-align: center;
+        font-size: 30px;
+      }
+      .header > nav,
+      .nav,
+      nav > a {
+        width: 100%;
+        height: 80px;
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+      }
 
-    </style>  
-     
+      .nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+      .title {
+        font-style: italic;
+        font-family: "Times New Roman", Times, serif;
+        color: blue;
+        background-color: white;
+      }
+      a:hover,
+      a:focus {
+        color: black !important;
+        background-color: white !important;
+        border-color: green !important;
+      }
+      a:active,
+      .active {
+        color: black !important;
+        background-color: white !important;
+        border-color: rgb(47, 0, 128) !important;
+      }
+    </style>
+
     <script type="text/javascript" src="index.js">
-        //appel de script extern
+      //appel de script extern
     </script>
     <script>
-        //appel de script interne
-        document.addEventListener('DOMContentLoaded',
-         function() {
-            alert('Student Management System Dashboard Loaded');
-        });
+      //appel de script interne
+      document.addEventListener("DOMContentLoaded", function () {
+        alert("Student Management System Dashboard Loaded");
+      });
     </script>
-
-
-
-</head>
-<body>
+  </head>
+  <body>
     <header class="header" id="header">
-        <a href="/" class="brand">
-            <div class="logo">SMS</div>
-            Student Management System
-        </a>
-        <nav class="nav">
-            <a class="active" href="#dashboard">Tableau de bord</a>
-            <a href="#students">Students</a>
-            <a href="#courses">Courses</a>
-            <a href="#grades">Grades</a>
-            <a href="#settings">Settings</a>
-            <a href="#settings">Connexion</a>
-
-        </nav>
+      <a href="/" class="brand">
+        <div class="logo">SMS</div>
+        Student Management System
+      </a>
+      <nav class="nav">
+        <a class="active" href="#dashboard">Tableau de bord</a>
+        <a href="#students">Students</a>
+        <a href="#courses">Courses</a>
+        <a href="#grades">Grades</a>
+        <a href="#settings">Settings</a>
+        <a href="#settings">Connexion</a>
+      </nav>
     </header>
 
     <main class="container">
-        <section class="hero">
-            <div>
-                <h3 style="text-align:center !important;color:red !important"><span class="kicker">Student Management Dashboard</span></h3>
-                <h1 class="title" id="title"><marquee direction="left" behavior="alternate">Manage Your Educational Institution</marquee></h1>
-                <p class="lead">Efficiently manage students, courses, and grades with our comprehensive management system.</p>
-                <div class="cta">
-                    <a href="#" class="btn btn-primary">Get Started</a>
-                    <a href="#" class="btn btn-ghost">Learn More</a>
-                </div>
-            </div>
-        </section>
+      <section class="hero">
+        <div>
+          <h3 style="text-align: center !important; color: red !important">
+            <span class="kicker">Student Management Dashboard</span>
+          </h3>
+          <h1 class="title" id="title">
+            <marquee direction="left" behavior="alternate"
+              >Manage Your Educational Institution</marquee
+            >
+          </h1>
+          <p class="lead">
+            Efficiently manage students, courses, and grades with our
+            comprehensive management system.
+          </p>
+          <div class="cta">
+            <a href="#" class="btn btn-primary">Get Started</a>
+            <a href="#" class="btn btn-ghost">Learn More</a>
+          </div>
+        </div>
+      </section>
 
-        <div class="spacer"></div>
+      <div class="spacer"></div>
 
-        <section>
-            <div class="row cols-3">
-                <div class="card">
-                    <h3 class="card-title">Total Students</h3>
-                    <p class="card-desc">150 Active Students</p>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">Active Courses</h3>
-                    <p class="card-desc">12 Courses Running</p>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">Upcoming Events</h3>
-                    <p class="card-desc">5 Events This Week</p>
-                </div>
-            </div>
-        </section>
+      <section>
+        <div class="row cols-3">
+          <div class="card">
+            <h3 class="card-title">Total Students</h3>
+            <p class="card-desc">150 Active Students</p>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Active Courses</h3>
+            <p class="card-desc">12 Courses Running</p>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Upcoming Events</h3>
+            <p class="card-desc">5 Events This Week</p>
+          </div>
+        </div>
+      </section>
 
-        <div class="spacer"></div>
+      <div class="spacer"></div>
 
-        <section>
-            <h2>Recent Students</h2>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Course</th>
-                        <th>Status</th>
-                        <th>Actions</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>peter Bot</td>
-                        <td>Computer Science</td>
-                        <td>Active</td>
-                        <td><a href="#" class="btn">View</a></td>
-                    </tr>
-                    <tr>
-                        <td>Jane Smith</td>
-                        <td>Business Admin</td>
-                        <td>Active</td>
-                        <td><a href="#" class="btn">View</a></td>
-                    </tr>
-                    <tr>
-                        <td>Mike Johnson</td>
-                        <td>Data Science</td>
-                        <td>Active</td>
-                        <td><a href="#" class="btn">View</a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+      <section>
+        <h2>Recent Students</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Course</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>peter Bot</td>
+              <td>Computer Science</td>
+              <td>Active</td>
+              <td><a href="#" class="btn">View</a></td>
+            </tr>
+            <tr>
+              <td>Jane Smith</td>
+              <td>Business Admin</td>
+              <td>Active</td>
+              <td><a href="#" class="btn">View</a></td>
+            </tr>
+            <tr>
+              <td>Mike Johnson</td>
+              <td>Data Science</td>
+              <td>Active</td>
+              <td><a href="#" class="btn">View</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <div class="row cols-3">
-                <div>
-                    <h4 class="m-0 mb-1">Contact</h4>
-                    <p class="m-0">Email: admin@school.com</p>
-                    <p class="m-0">Phone: (123) 456-7890</p>
-                </div>
-                <div>
-                    <h4 class="m-0 mb-1">Quick Links</h4>
-                    <nav class="nav">
-                        <a href="#help">Help Center</a>
-                        <a href="#support">Support</a>
-                        <a href="#privacy">Privacy Policy</a>
-                    </nav>
-                </div>
-                <div class="right">
-                    <p class="m-0">&copy; 2025 INSI</p>
-                    <p class="m-0">All rights reserved.</p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row cols-3">
+          <div>
+            <h4 class="m-0 mb-1">Contact</h4>
+            <p class="m-0">Email: admin@school.com</p>
+            <p class="m-0">Phone: (123) 456-7890</p>
+          </div>
+          <div>
+            <h4 class="m-0 mb-1">Quick Links</h4>
+            <nav class="nav">
+              <a href="#help">Help Center</a>
+              <a href="#support">Support</a>
+              <a href="#privacy">Privacy Policy</a>
+            </nav>
+          </div>
+          <div class="right">
+            <p class="m-0">&copy; 2025 INSI</p>
+            <p class="m-0">All rights reserved.</p>
+          </div>
         </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
-
-
