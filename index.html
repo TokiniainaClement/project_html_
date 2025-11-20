@@ -6,20 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body{
-          background-color: aqua;
+          background-color: rgb(142, 195, 211);
         }
         .header>a,.brand{
             text-align:center;
             font-size: 30px;
         }
         .header>nav,.nav,nav>a {
-            text-align: end; 
-            background: black;
+            text-align: center; 
+            background: #4772a0;
+            border-radius: 8px;
             color: white !important;
             border-color: firebrick;
             font-size: 26px;
-            text-decoration: double;
+            text-decoration: none;
             text-transform: uppercase;
+            transition: background-color 0.5s ease;
+            padding: 0rem 0;
+            margin: 0.5rem 0 0;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-top: 20px;
+            margin-bottom:20px;
         }
         .title{
             font-style: italic;
@@ -29,14 +37,8 @@
         }
         a:hover,
         a:focus {
-            color: red !important;
-            background-color: yellow !important;
-            border-color: green !important;
-        }
-        a:active,.active {
-            color: rgb(0, 255, 34) !important;
-            background-color: rgb(255, 123, 0) !important;
-            border-color: rgb(47, 0, 128) !important;
+            color: white !important;
+            background-color: #0056b3 !important;
         }
 
     </style>  
@@ -58,8 +60,8 @@
 <body>
     <header class="header" id="header">
         <a href="/" class="brand">
-            <div class="logo">SMS</div>
-            Student Management System
+            <div class="logo">SMS Student Management System
+            </div>
         </a>
         <nav class="nav">
             <a class="active" href="#dashboard">Tableau de bord</a>
@@ -68,7 +70,6 @@
             <a href="#grades">Grades</a>
             <a href="#settings">Settings</a>
             <a href="#settings">Connexion</a>
-
         </nav>
     </header>
 
