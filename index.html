@@ -6,7 +6,9 @@ git <!doctype html>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body{
-          background-color: aqua;
+          background : linear-gradient( to bottom right , #ea00ff , rgb(111, 0, 255) );
+          background-repeat: no-repeat;
+          background-attachment: fixed;
           background-image: url(nini.jpg);
 
           background-repeat: no-repeat;
@@ -56,7 +58,9 @@ git <!doctype html>
             border-color: rgb(47, 0, 128) !important;
         }
  .table {
-    text-align: center;
+    align-items: center;
+    margin-left: 400px;
+    
  }
     </style>  
      
@@ -110,18 +114,18 @@ git <!doctype html>
             <div class="row cols-3">
                 <div class="card">
                     <h3 class="card-title">Total Students</h3>
-                    <p class="card-desc">150 Active Students</p>
+                    <p class="card-desc" style="color: aliceblue;">150 Active Students</p>
                 </div>
                 <div class="card">
                     <div class="right"><h3 class="card-title">Active Courses</h3>
 
                     </div>
-                    <div class="left"><p class="card-desc">12 Courses Running</p></div>
+                    <div class="left"><p class="card-desc" style="color: aliceblue;">12 Courses Running</p></div>
                  
                 </div>
                 <div class="card">
                     <h3 class="card-title">Upcoming Events</h3>
-                    <p class="card-desc">5 Events This Week</p>
+                    <p class="card-desc" style="color: rgb(5, 136, 0);">5 Events This Week</p>
                 </div>
             </div>
         </section>
@@ -130,7 +134,7 @@ git <!doctype html>
 
         <section>
             <h2>Recent Students</h2>
-            <table class="table" style="text-align: center;">
+            <table class="table" >
                 <thead>
                     <tr>
                         <th>Name</th>
