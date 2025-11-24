@@ -57,6 +57,64 @@
       }
     </style>
 
+          background : linear-gradient( to bottom right , #ea00ff , rgb(111, 0, 255) );
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-image: url(nini.jpg);
+
+          background-repeat: no-repeat;
+          background-size: cover;
+          text-align: center;
+        }
+        .header>a,.brand{
+            text-align:center;
+            font-size: 30px;
+            color: cyan;
+            font-family: Race Sport;
+
+        
+        }
+        .header>nav,.nav,nav>a {
+            text-align: center; 
+            background: transparent ;
+            background-repeat: no-repeat;
+            color: white !important;
+            border-color: firebrick;
+            font-size: 26px;
+            text-decoration: none;
+            text-transform: uppercase;
+                font-family: reospec;
+        }
+        .kicker {
+        color: rgb(41, 33, 33);
+
+        }
+        .title{
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(255, 255, 255);
+            background-color: white;
+        }
+        a:hover,
+        a:focus {
+            color: red !important;
+            background-color: yellow !important;
+            border-color: green !important;
+            background: transparent;
+        }
+        a:active,.active {
+            color: rgb(0, 255, 34) !important;
+            
+            background: transparent;
+            border-color: rgb(47, 0, 128) !important;
+        }
+ .table {
+    align-items: center;
+    margin-left: 400px;
+    
+ }
+    </style>  
+     
     <script type="text/javascript" src="index.js">
       //appel de script extern
     </script>
@@ -107,6 +165,27 @@
           </div>
         </div>
       </section>
+            <a href="#students" style="background: transparent;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Students</a>
+            <a href="#courses"style="background: transparent;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Courses</a>
+            <a href="#grades" style="background: transparent;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Grades</a>
+            <a href="#settings" style="background: transparent;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Settings</a>
+            <a href="#settings" style="background: transparent;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Connexion</a>
+
+        </nav>
+    </header>
+
+    <main class="container" style="flex: 1;">
+        <section class="hero">
+            <div>
+                <h3 style="text-align:center !important;color:red !important;"><span class="kicker">Student Management Dashboard</span></h3>
+                <h1 class="title" id="title" style="background: transparent;"><marquee direction="left" behavior="alternate">Manage Your Educational Institution</marquee></h1>
+                <p class="lead">Efficiently manage students, courses, and grades with our comprehensive management system.</p>
+                <div class="cta">
+                    <a href="#" class="btn btn-primary">Get Started</a>
+                    <a href="#" class="btn btn-ghost">Learn More</a>
+                </div>
+            </div>
+        </section>
 
       <div class="spacer"></div>
 
