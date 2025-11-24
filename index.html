@@ -6,48 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
       body {
-        background-color: rgb(142, 195, 211);
+        background-color: aqua;
       }
+      .header > a,
       .brand {
-        text-decoration: none;
+        text-align: center;
+        font-size: 30px;
       }
-      .logo {
+      .header > nav,
+      .nav,
+      nav > a {
         width: 100%;
-        height: 60px;
-        /* background-color: red; */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .logo h1 {
-        color: black;
-        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-          "Lucida Sans", Arial, sans-serif;
-      }
-      .nav {
-        width: 100%;
-        height: 60px;
+        height: 80px;
         background-color: black;
-      }
-      .contente {
-        width: 50%;
-        height: 58px;
-        /* border: 1px solid red; */
-        margin: auto;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
       }
-      .contente a {
+
+      .nav a {
         color: white;
         text-decoration: none;
+        font-size: 16px;
         font-weight: bold;
-        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-          "Lucida Sans", Arial, sans-serif;
-      }
-      .contente a:hover {
-        color: red;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       }
       .title {
         font-style: italic;
@@ -55,66 +38,20 @@
         color: blue;
         background-color: white;
       }
+      a:hover,
+      a:focus {
+        color: black !important;
+        background-color: white !important;
+        border-color: green !important;
+      }
+      a:active,
+      .active {
+        color: black !important;
+        background-color: white !important;
+        border-color: rgb(47, 0, 128) !important;
+      }
     </style>
 
-          background : linear-gradient( to bottom right , #ea00ff , rgb(111, 0, 255) );
-          background-repeat: no-repeat;
-          background-attachment: fixed;
-          background-image: url(nini.jpg);
-
-          background-repeat: no-repeat;
-          background-size: cover;
-          text-align: center;
-        }
-        .header>a,.brand{
-            text-align:center;
-            font-size: 30px;
-            color: cyan;
-            font-family: Race Sport;
-
-        
-        }
-        .header>nav,.nav,nav>a {
-            text-align: center; 
-            background: transparent ;
-            background-repeat: no-repeat;
-            color: white !important;
-            border-color: firebrick;
-            font-size: 26px;
-            text-decoration: none;
-            text-transform: uppercase;
-                font-family: reospec;
-        }
-        .kicker {
-        color: rgb(41, 33, 33);
-
-        }
-        .title{
-            font-style: italic;
-            font-family: 'Times New Roman', Times, serif;
-            color: rgb(255, 255, 255);
-            background-color: white;
-        }
-        a:hover,
-        a:focus {
-            color: red !important;
-            background-color: yellow !important;
-            border-color: green !important;
-            background: transparent;
-        }
-        a:active,.active {
-            color: rgb(0, 255, 34) !important;
-            
-            background: transparent;
-            border-color: rgb(47, 0, 128) !important;
-        }
- .table {
-    align-items: center;
-    margin-left: 400px;
-    
- }
-    </style>  
-     
     <script type="text/javascript" src="index.js">
       //appel de script extern
     </script>
@@ -128,19 +65,16 @@
   <body>
     <header class="header" id="header">
       <a href="/" class="brand">
-        <div class="logo">
-          <h1>SMS Student Management System</h1>
-        </div>
+        <div class="logo">SMS</div>
+        Student Management System
       </a>
       <nav class="nav">
-        <div class="contente">
-          <a class="active" href="#dashboard">Tableau de bord</a>
-          <a href="#students">Students</a>
-          <a href="#courses">Courses</a>
-          <a href="#grades">Grades</a>
-          <a href="#settings">Settings</a>
-          <a href="#settings">Connexion</a>
-        </div>
+        <a class="active" href="#dashboard">Tableau de bord</a>
+        <a href="#students">Students</a>
+        <a href="#courses">Courses</a>
+        <a href="#grades">Grades</a>
+        <a href="#settings">Settings</a>
+        <a href="#settings">Connexion</a>
       </nav>
     </header>
 
@@ -165,27 +99,6 @@
           </div>
         </div>
       </section>
-            <a href="#students" style="background: transparent;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Students</a>
-            <a href="#courses"style="background: transparent;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Courses</a>
-            <a href="#grades" style="background: transparent;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Grades</a>
-            <a href="#settings" style="background: transparent;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Settings</a>
-            <a href="#settings" style="background: transparent;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Connexion</a>
-
-        </nav>
-    </header>
-
-    <main class="container" style="flex: 1;">
-        <section class="hero">
-            <div>
-                <h3 style="text-align:center !important;color:red !important;"><span class="kicker">Student Management Dashboard</span></h3>
-                <h1 class="title" id="title" style="background: transparent;"><marquee direction="left" behavior="alternate">Manage Your Educational Institution</marquee></h1>
-                <p class="lead">Efficiently manage students, courses, and grades with our comprehensive management system.</p>
-                <div class="cta">
-                    <a href="#" class="btn btn-primary">Get Started</a>
-                    <a href="#" class="btn btn-ghost">Learn More</a>
-                </div>
-            </div>
-        </section>
 
       <div class="spacer"></div>
 
