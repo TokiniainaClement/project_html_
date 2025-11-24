@@ -4,51 +4,20 @@
     <meta charset="utf-8" />
     <title>Student Management System</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
     <style>
       body {
-        background-color: aqua;
-      }
-      .header > a,
-      .brand {
-        text-align: center;
-        font-size: 30px;
-      }
-      .header > nav,
-      .nav,
-      nav > a {
-        width: 100%;
-        height: 80px;
-        background-color: black;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
+        background-color: white;
       }
 
-      .nav a {
-        color: white;
-        text-decoration: none;
-        font-size: 16px;
-        font-weight: bold;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      .content-logo {
+        width: 100%;
       }
       .title {
         font-style: italic;
         font-family: "Times New Roman", Times, serif;
         color: blue;
         background-color: white;
-      }
-      a:hover,
-      a:focus {
-        color: black !important;
-        background-color: white !important;
-        border-color: green !important;
-      }
-      a:active,
-      .active {
-        color: black !important;
-        background-color: white !important;
-        border-color: rgb(47, 0, 128) !important;
       }
     </style>
 
@@ -63,25 +32,43 @@
     </script>
   </head>
   <body>
-    <header class="header" id="header">
-      <a href="/" class="brand">
-        <div class="logo">SMS</div>
-        Student Management System
-      </a>
-      <nav class="nav">
-        <a class="active" href="#dashboard">Tableau de bord</a>
-        <a href="#students">Students</a>
-        <a href="#courses">Courses</a>
-        <a href="#grades">Grades</a>
-        <a href="#settings">Settings</a>
-        <a href="#settings">Connexion</a>
+    <header id="header">
+      <div class="container">
+        <a href="#" class="text-dark">
+          <h3 style="margin: 15px">SMS Student Management System</h3>
+        </a>
+      </div>
+
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#dashboard">Tableau de bord</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#students">Students</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#courses">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#settings">Settings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#settings">Connexion</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
     <main class="container">
       <section class="hero">
         <div>
-          <h3 style="text-align: center !important; color: red !important">
+          <h3
+            class="my-3"
+            style="text-align: center !important; color: black !important"
+          >
             <span class="kicker">Student Management Dashboard</span>
           </h3>
           <h1 class="title" id="title">
@@ -93,38 +80,34 @@
             Efficiently manage students, courses, and grades with our
             comprehensive management system.
           </p>
-          <div class="cta">
+          <div class="cta my-4">
             <a href="#" class="btn btn-primary">Get Started</a>
             <a href="#" class="btn btn-ghost">Learn More</a>
           </div>
         </div>
       </section>
 
-      <div class="spacer"></div>
-
       <section>
-        <div class="row cols-3">
-          <div class="card">
+        <div class="row my-4">
+          <div class="col">
             <h3 class="card-title">Total Students</h3>
             <p class="card-desc">150 Active Students</p>
           </div>
-          <div class="card">
+          <div class="col">
             <h3 class="card-title">Active Courses</h3>
             <p class="card-desc">12 Courses Running</p>
           </div>
-          <div class="card">
+          <div class="col">
             <h3 class="card-title">Upcoming Events</h3>
             <p class="card-desc">5 Events This Week</p>
           </div>
         </div>
       </section>
 
-      <div class="spacer"></div>
-
       <section>
-        <h2>Recent Students</h2>
-        <table class="table">
-          <thead>
+        <h2 class="mb-4">Recent Students</h2>
+        <table class="table table-borderless table-bordered table-hover">
+          <thead class="thead-dark">
             <tr>
               <th>Name</th>
               <th>Course</th>
@@ -156,23 +139,21 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer bg-dark text-light">
       <div class="container">
-        <div class="row cols-3">
-          <div>
+        <div class="row">
+          <div class="col">
             <h4 class="m-0 mb-1">Contact</h4>
             <p class="m-0">Email: admin@school.com</p>
             <p class="m-0">Phone: (123) 456-7890</p>
           </div>
-          <div>
+          <div class="col">
             <h4 class="m-0 mb-1">Quick Links</h4>
-            <nav class="nav">
-              <a href="#help">Help Center</a>
-              <a href="#support">Support</a>
-              <a href="#privacy">Privacy Policy</a>
-            </nav>
+            <a href="#help">Help Center</a>
+            <a href="#support">Support</a>
+            <a href="#privacy">Privacy Policy</a>
           </div>
-          <div class="right">
+          <div class="col">
             <p class="m-0">&copy; 2025 INSI</p>
             <p class="m-0">All rights reserved.</p>
           </div>
