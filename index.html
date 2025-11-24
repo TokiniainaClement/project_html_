@@ -1,12 +1,62 @@
-git <!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Student Management System</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
-        body{
-<<<<<<< HEAD
+      body {
+        background-color: rgb(142, 195, 211);
+      }
+      .brand {
+        text-decoration: none;
+      }
+      .logo {
+        width: 100%;
+        height: 60px;
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .logo h1 {
+        color: black;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      .nav {
+        width: 100%;
+        height: 60px;
+        background-color: black;
+      }
+      .contente {
+        width: 50%;
+        height: 58px;
+        /* border: 1px solid red; */
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      .contente a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      .contente a:hover {
+        color: red;
+      }
+      .title {
+        font-style: italic;
+        font-family: "Times New Roman", Times, serif;
+        color: blue;
+        background-color: white;
+      }
+    </style>
+
           background : linear-gradient( to bottom right , #ea00ff , rgb(111, 0, 255) );
           background-repeat: no-repeat;
           background-attachment: fixed;
@@ -15,9 +65,6 @@ git <!doctype html>
           background-repeat: no-repeat;
           background-size: cover;
           text-align: center;
-=======
-          background-color: rgb(142, 195, 211);
->>>>>>> 4e36c503218b341fe92f5cef91dce64f120a7d94
         }
         .header>a,.brand{
             text-align:center;
@@ -29,33 +76,18 @@ git <!doctype html>
         }
         .header>nav,.nav,nav>a {
             text-align: center; 
-<<<<<<< HEAD
             background: transparent ;
             background-repeat: no-repeat;
-=======
-            background: #4772a0;
-            border-radius: 8px;
->>>>>>> 4e36c503218b341fe92f5cef91dce64f120a7d94
             color: white !important;
             border-color: firebrick;
             font-size: 26px;
             text-decoration: none;
             text-transform: uppercase;
-<<<<<<< HEAD
                 font-family: reospec;
         }
         .kicker {
         color: rgb(41, 33, 33);
 
-=======
-            transition: background-color 0.5s ease;
-            padding: 0rem 0;
-            margin: 0.5rem 0 0;
-            padding-left: 10px;
-            padding-right: 10px;
-            margin-top: 20px;
-            margin-bottom:20px;
->>>>>>> 4e36c503218b341fe92f5cef91dce64f120a7d94
         }
         .title{
             font-style: italic;
@@ -65,7 +97,6 @@ git <!doctype html>
         }
         a:hover,
         a:focus {
-<<<<<<< HEAD
             color: red !important;
             background-color: yellow !important;
             border-color: green !important;
@@ -76,10 +107,6 @@ git <!doctype html>
             
             background: transparent;
             border-color: rgb(47, 0, 128) !important;
-=======
-            color: white !important;
-            background-color: #0056b3 !important;
->>>>>>> 4e36c503218b341fe92f5cef91dce64f120a7d94
         }
  .table {
     align-items: center;
@@ -89,41 +116,61 @@ git <!doctype html>
     </style>  
      
     <script type="text/javascript" src="index.js">
-        //appel de script extern
+      //appel de script extern
     </script>
     <script>
-        //appel de script interne
-        document.addEventListener('DOMContentLoaded',
-         function() {
-            alert('Student Management System Dashboard Loaded');
-        });
+      //appel de script interne
+      document.addEventListener("DOMContentLoaded", function () {
+        alert("Student Management System Dashboard Loaded");
+      });
     </script>
-
-
-
-</head>
-<body>
+  </head>
+  <body>
     <header class="header" id="header">
-        <a href="/" class="brand">
-            <div class="logo">SMS Student Management System
-            </div>
-        </a>
-        <nav class="nav">
-            <a class="active" href="#dashboard">Tableau de bord</a>
-<<<<<<< HEAD
+      <a href="/" class="brand">
+        <div class="logo">
+          <h1>SMS Student Management System</h1>
+        </div>
+      </a>
+      <nav class="nav">
+        <div class="contente">
+          <a class="active" href="#dashboard">Tableau de bord</a>
+          <a href="#students">Students</a>
+          <a href="#courses">Courses</a>
+          <a href="#grades">Grades</a>
+          <a href="#settings">Settings</a>
+          <a href="#settings">Connexion</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <div>
+          <h3 style="text-align: center !important; color: red !important">
+            <span class="kicker">Student Management Dashboard</span>
+          </h3>
+          <h1 class="title" id="title">
+            <marquee direction="left" behavior="alternate"
+              >Manage Your Educational Institution</marquee
+            >
+          </h1>
+          <p class="lead">
+            Efficiently manage students, courses, and grades with our
+            comprehensive management system.
+          </p>
+          <div class="cta">
+            <a href="#" class="btn btn-primary">Get Started</a>
+            <a href="#" class="btn btn-ghost">Learn More</a>
+          </div>
+        </div>
+      </section>
             <a href="#students" style="background: transparent;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Students</a>
             <a href="#courses"style="background: transparent;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Courses</a>
             <a href="#grades" style="background: transparent;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Grades</a>
             <a href="#settings" style="background: transparent;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Settings</a>
             <a href="#settings" style="background: transparent;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Connexion</a>
 
-=======
-            <a href="#students">Students</a>
-            <a href="#courses">Courses</a>
-            <a href="#grades">Grades</a>
-            <a href="#settings">Settings</a>
-            <a href="#settings">Connexion</a>
->>>>>>> 4e36c503218b341fe92f5cef91dce64f120a7d94
         </nav>
     </header>
 
@@ -140,89 +187,84 @@ git <!doctype html>
             </div>
         </section>
 
-        <div class="spacer"></div>
+      <div class="spacer"></div>
 
-        <section style="text-align: center;">
-            <div class="row cols-3">
-                <div class="card">
-                    <h3 class="card-title">Total Students</h3>
-                    <p class="card-desc" style="color: aliceblue;">150 Active Students</p>
-                </div>
-                <div class="card">
-                    <div class="right"><h3 class="card-title">Active Courses</h3>
+      <section>
+        <div class="row cols-3">
+          <div class="card">
+            <h3 class="card-title">Total Students</h3>
+            <p class="card-desc">150 Active Students</p>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Active Courses</h3>
+            <p class="card-desc">12 Courses Running</p>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Upcoming Events</h3>
+            <p class="card-desc">5 Events This Week</p>
+          </div>
+        </div>
+      </section>
 
-                    </div>
-                    <div class="left"><p class="card-desc" style="color: aliceblue;">12 Courses Running</p></div>
-                 
-                </div>
-                <div class="card">
-                    <h3 class="card-title">Upcoming Events</h3>
-                    <p class="card-desc" style="color: rgb(5, 136, 0);">5 Events This Week</p>
-                </div>
-            </div>
-        </section>
+      <div class="spacer"></div>
 
-        <div class="spacer"></div>
-
-        <section>
-            <h2>Recent Students</h2>
-            <table class="table" >
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Course</th>
-                        <th>Status</th>
-                        <th>Actions</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>peter Bot</td>
-                        <td>Computer Science</td>
-                        <td>Active</td>
-                        <td><a href="#" class="btn">View</a></td>
-                    </tr>
-                    <tr>
-                        <td>Jane Smith</td>
-                        <td>Business Admin</td>
-                        <td>Active</td>
-                        <td><a href="#" class="btn">View</a></td>
-                    </tr>
-                    <tr>
-                        <td>Mike Johnson</td>
-                        <td>Data Science</td>
-                        <td>Active</td>
-                        <td><a href="#" class="btn">View</a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+      <section>
+        <h2>Recent Students</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Course</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>peter Bot</td>
+              <td>Computer Science</td>
+              <td>Active</td>
+              <td><a href="#" class="btn">View</a></td>
+            </tr>
+            <tr>
+              <td>Jane Smith</td>
+              <td>Business Admin</td>
+              <td>Active</td>
+              <td><a href="#" class="btn">View</a></td>
+            </tr>
+            <tr>
+              <td>Mike Johnson</td>
+              <td>Data Science</td>
+              <td>Active</td>
+              <td><a href="#" class="btn">View</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <div class="row cols-3">
-                <div>
-                    <h4 class="m-0 mb-1">Contact</h4>
-                    <p class="m-0">Email: admin@school.com</p>
-                    <p class="m-0">Phone: (123) 456-7890</p>
-                </div>
-                <div>
-                    <h4 class="m-0 mb-1">Quick Links</h4>
-                    <nav class="nav">
-                        <a href="#help">Help Center</a>
-                        <a href="#support">Support</a>
-                        <a href="#privacy">Privacy Policy</a>
-                    </nav>
-                </div>
-                <div class="right">
-                    <p class="m-0">&copy; 2025 INSI</p>
-                    <p class="m-0">All rights reserved.</p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row cols-3">
+          <div>
+            <h4 class="m-0 mb-1">Contact</h4>
+            <p class="m-0">Email: admin@school.com</p>
+            <p class="m-0">Phone: (123) 456-7890</p>
+          </div>
+          <div>
+            <h4 class="m-0 mb-1">Quick Links</h4>
+            <nav class="nav">
+              <a href="#help">Help Center</a>
+              <a href="#support">Support</a>
+              <a href="#privacy">Privacy Policy</a>
+            </nav>
+          </div>
+          <div class="right">
+            <p class="m-0">&copy; 2025 INSI</p>
+            <p class="m-0">All rights reserved.</p>
+          </div>
         </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
-
-
