@@ -5,24 +5,23 @@ namespace controller;
 use PDO;
 use PDOException;
 
-class Database {
+class Database
+{
 
     public static function getPDO(): PDO
     {
-        $host = "mysql:host=localhost;dbname=student_management_system;";
-        $username = "root";
-        $mdp = "";
+        $dbPath = __DIR__ . "/../database/database.sqlite";
 
         try {
-            $db = new PDO($host, $username, $mdp);
-        }
-        catch (PDOException $ex)
-        {
-            echo "Erreur : " . $ex->getMessage();
+            $db = new PDO("sqlite:" . $dbPath);
+
+        } catch (PDOException $ex) {
+            
+            echo "Erreur SQLite : " . $ex->getMessage();
             die();
         }
 
         return $db;
     }
-}
 
+}
