@@ -91,6 +91,7 @@ require "template/header.php";
   </section>
 
   <section>
+    <div id="students" class="text-bold p-2" >Menu Student</div>
     <h2 class="mb-4">Recent Students</h2>
     <table class="table table-borderless table-bordered table-hover" id="dataTable">
 
