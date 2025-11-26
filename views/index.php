@@ -32,10 +32,10 @@ require "template/header.php";
     <div class="container">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="#dashboard">Tableau de bord</a>
+          <a class="nav-link" href="index.php">Tableau de bord</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#students">Students</a>
+          <a class="nav-link" href="student.php">Students</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#courses">Courses</a>
